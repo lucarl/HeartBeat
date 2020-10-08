@@ -10,6 +10,9 @@ public class Player : MonoBehaviour {
     //player points
     public static int points = 0;
 
+    //heart rate
+    public static int heartRate = 0;
+
     // Start is called before the first frame update
     void Start () {
 
@@ -17,6 +20,7 @@ public class Player : MonoBehaviour {
 
     // Update is called once per frame
     void Update () {
+        heartRate = (int) GetComponent<Rigidbody2D>().position.y;
         transform.position += Vector3.right * 0.8f * Time.deltaTime;
         if (Input.GetKey (KeyCode.UpArrow)) {
             GetComponent<Rigidbody2D> ().velocity = new Vector2 (0, speed);
