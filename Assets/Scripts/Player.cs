@@ -8,7 +8,7 @@ public class Player : MonoBehaviour {
     public int speed = 12;
 
     //player points
-    public int points;
+    public static int points = 0;
 
     // Start is called before the first frame update
     void Start () {
@@ -29,8 +29,8 @@ public class Player : MonoBehaviour {
 
     private void OnTriggerEnter2D (Collider2D other) {
         if (other.gameObject.layer == 8) {
-            Destroy (other.gameObject);
             points++;
+            Destroy (other.gameObject);
         }
     }
 }
