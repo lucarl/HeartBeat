@@ -5,13 +5,15 @@ using UnityEngine;
 public class Player : MonoBehaviour {
 
     //The speed of the player
-    public int speed = 12;
+    private int dirSpeed = 12;
+
+    private float playerSpeed = 0.3f;
 
     //player points
     public static int points = 0;
 
     //heart rate
-    public static int heartRate = 0;
+    public static double heartRate = 0;
 
     // Start is called before the first frame update
     void Start () {
@@ -20,12 +22,12 @@ public class Player : MonoBehaviour {
 
     // Update is called once per frame
     void Update () {
-        heartRate = (int) GetComponent<Rigidbody2D>().position.y;
-        transform.position += Vector3.right * 0.8f * Time.deltaTime;
+        heartRate = (int) GetComponent<Rigidbody2D>().position.y + 57;
+        transform.position += Vector3.right * playerSpeed * Time.deltaTime;
         if (Input.GetKey (KeyCode.UpArrow)) {
-            GetComponent<Rigidbody2D> ().velocity = new Vector2 (0, speed);
+            GetComponent<Rigidbody2D> ().velocity = new Vector2 (0, dirSpeed);
         } else if (Input.GetKey (KeyCode.DownArrow)) {
-            GetComponent<Rigidbody2D> ().velocity = new Vector2 (0, speed * -1);
+            GetComponent<Rigidbody2D> ().velocity = new Vector2 (0, dirSpeed * -1);
         } else {
             GetComponent<Rigidbody2D> ().velocity = new Vector2 (0, 0);
         }
