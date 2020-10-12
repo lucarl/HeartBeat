@@ -7,13 +7,15 @@ public class Player : MonoBehaviour {
     //The speed of the player
     private int dirSpeed = 12;
 
-    private float playerSpeed = 0.3f;
+    private float playerSpeed = 1f;
 
     //player points
     public static int points = 0;
 
     //heart rate
     public static double heartRate = 0;
+
+    private float xPos = 0;
 
     // Start is called before the first frame update
     void Start () {
@@ -22,15 +24,17 @@ public class Player : MonoBehaviour {
 
     // Update is called once per frame
     void Update () {
-        heartRate = (int) GetComponent<Rigidbody2D>().position.y + 57;
-        transform.position += Vector3.right * playerSpeed * Time.deltaTime;
-        if (Input.GetKey (KeyCode.UpArrow)) {
+        heartRate = (int) GetComponent<Rigidbody2D>().position.y;
+        xPos += playerSpeed * Time.deltaTime;
+        transform.position = new Vector3(0, 0, 0);
+        transform.position = new Vector3(xPos, HeartRateScript.bpm, transform.position.z);
+        /*if (Input.GetKey (KeyCode.UpArrow)) {
             GetComponent<Rigidbody2D> ().velocity = new Vector2 (0, dirSpeed);
         } else if (Input.GetKey (KeyCode.DownArrow)) {
             GetComponent<Rigidbody2D> ().velocity = new Vector2 (0, dirSpeed * -1);
         } else {
             GetComponent<Rigidbody2D> ().velocity = new Vector2 (0, 0);
-        }
+        }*/
     }
 
     private void OnTriggerEnter2D (Collider2D other) {
