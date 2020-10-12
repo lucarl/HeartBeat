@@ -7,12 +7,13 @@ using UnityCoreBluetoothFramework;
 public class HeartRateScript : MonoBehaviour
 {
 
-    Text heartRate;
+    Text heartRateText;
+    public static float bpm = 0;
 
     // Start is called before the first frame update
     void Start()
     {
-        heartRate = GetComponent<Text> ();
+        heartRateText = GetComponent<Text> ();
 
         UnityCoreBluetooth.CreateSharedInstance();
 
@@ -26,11 +27,11 @@ public class HeartRateScript : MonoBehaviour
         UnityCoreBluetooth.Shared.OnDiscoverPeripheral((UnityCBPeripheral peripheral) =>
         {
             Debug.Log("Discovered peripheral: " + peripheral.name);
-            if (peripheral.name == "Polar OH1 72838626")
+            if (peripheral.name == "Polar OH1 72838626" || peripheral.name == "Polar OH1 72852D2D")
             {
                 UnityCoreBluetooth.Shared.StopScan();
                 UnityCoreBluetooth.Shared.Connect(peripheral);
-            }
+            } 
         });
 
         UnityCoreBluetooth.Shared.OnConnectPeripheral((UnityCBPeripheral peripheral) =>
@@ -70,6 +71,7 @@ public class HeartRateScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        heartRate.text = "HR: " + Player.heartRate;
+        bpm = heartRate;
+        heartRateText.text = "HR: " + heartRate;
     }
 }
