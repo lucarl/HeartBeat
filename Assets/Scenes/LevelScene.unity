@@ -395,6 +395,55 @@ PrefabInstance:
     - {fileID: 23076173771828094, guid: c1bee09c88207064ca42d6ebc274c572, type: 3}
     - {fileID: 33321113267211406, guid: c1bee09c88207064ca42d6ebc274c572, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c1bee09c88207064ca42d6ebc274c572, type: 3}
+--- !u!1 &159425183
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 159425185}
+  - component: {fileID: 159425184}
+  m_Layer: 0
+  m_Name: ScriptHolder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &159425184
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 159425183}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d974b8db9e0d4bdcb133a14a7fd8fdd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  p1Sprite: {fileID: 1927348408}
+  p2Sprite: {fileID: 1820945769}
+  p1HeartRateText: {fileID: 1071994786}
+  p2HeartRateText: {fileID: 1737281532}
+  p1ScoreText: {fileID: 897361705}
+  p2ScoreText: {fileID: 1703249843}
+--- !u!4 &159425185
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 159425183}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 269.06335, y: 190.43347, z: -581.45807}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &271008110
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -581,7 +630,7 @@ GameObject:
   m_Component:
   - component: {fileID: 736883212}
   m_Layer: 0
-  m_Name: Level
+  m_Name: Stars
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -624,7 +673,7 @@ GameObject:
   - component: {fileID: 799458857}
   - component: {fileID: 799458856}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Score Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -847,9 +896,8 @@ GameObject:
   - component: {fileID: 897361706}
   - component: {fileID: 897361708}
   - component: {fileID: 897361707}
-  - component: {fileID: 897361709}
   m_Layer: 5
-  m_Name: Score1
+  m_Name: P1 Score
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -915,18 +963,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 897361705}
   m_CullTransparentMesh: 0
---- !u!114 &897361709
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 897361705}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d9ca02d30ae144aaafca28b91dd9260, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &913678306
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1227,10 +1263,8 @@ GameObject:
   - component: {fileID: 1071994787}
   - component: {fileID: 1071994790}
   - component: {fileID: 1071994789}
-  - component: {fileID: 1071994788}
-  - component: {fileID: 1071994791}
   m_Layer: 5
-  m_Name: HeartRate1
+  m_Name: P1 Heart Rate
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1255,18 +1289,6 @@ RectTransform:
   m_AnchoredPosition: {x: -67.49795, y: 166.6}
   m_SizeDelta: {x: 134.99591, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1071994788
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1071994786}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d4ff46576a62a44aea7b6f842db2278b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1071994789
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1308,18 +1330,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1071994786}
   m_CullTransparentMesh: 0
---- !u!114 &1071994791
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1071994786}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0877d834445f54897b7437f1b41e2eda, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1097311076
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1574,6 +1584,49 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &1343161877
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1343161879}
+  - component: {fileID: 1343161878}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1343161878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1343161877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0877d834445f54897b7437f1b41e2eda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1343161879
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1343161877}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 269.06335, y: 190.43347, z: -581.45807}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1349645490
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1872,9 +1925,8 @@ GameObject:
   - component: {fileID: 1703249844}
   - component: {fileID: 1703249847}
   - component: {fileID: 1703249846}
-  - component: {fileID: 1703249845}
   m_Layer: 5
-  m_Name: Score2
+  m_Name: P2 Score
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1899,18 +1951,6 @@ RectTransform:
   m_AnchoredPosition: {x: 73.81, y: 150.1}
   m_SizeDelta: {x: 189.43289, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1703249845
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1703249843}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9b69f10f732b54e0093f34f3aaf3ac14, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1703249846
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1963,9 +2003,8 @@ GameObject:
   - component: {fileID: 1737281533}
   - component: {fileID: 1737281535}
   - component: {fileID: 1737281534}
-  - component: {fileID: 1737281536}
   m_Layer: 5
-  m_Name: HeartRate2
+  m_Name: P2 Heart Rate
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2031,18 +2070,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1737281532}
   m_CullTransparentMesh: 0
---- !u!114 &1737281536
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1737281532}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3e7e5b1496b584166b9d0c030bf82599, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1820945769 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1832475428084072, guid: c1bee09c88207064ca42d6ebc274c572,
@@ -2100,12 +2127,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: aef9b4f10d55548bca3923bb11d774f3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8ef4663bfb571486483c37ba9d6fbe18, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 3.93, y: 1.12}
+  m_Size: {x: 1.94, y: 1.67}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -2129,7 +2156,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 1.94, y: 1.67}
-    newSize: {x: 3.93, y: 1.12}
+    newSize: {x: 1.94, y: 1.67}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -2371,7 +2398,7 @@ GameObject:
   - component: {fileID: 2000647410}
   - component: {fileID: 2000647409}
   m_Layer: 0
-  m_Name: "Lovis fo\u0308rslag) \u2013 del 2 \u2013 19"
+  m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2453,7 +2480,7 @@ GameObject:
   - component: {fileID: 2004187930}
   - component: {fileID: 2004187929}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Score Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -18,11 +18,14 @@
         </e>
         <e p="Scripts" t="Include">
           <e p="BluetoothScript.cs" t="Include" />
+          <e p="EndSceneScript.cs" t="Include" />
+          <e p="GameState.cs" t="Include" />
           <e p="HeartRateScript.cs" t="Include" />
+          <e p="LevelSceneScript.cs" t="Include" />
           <e p="NameInputScript.cs" t="Include" />
-          <e p="Player.cs" t="Include" />
+          <e p="Player1.cs" t="Include" />
+          <e p="Player2.cs" t="Include" />
           <e p="PutOnPulseBandScript.cs" t="Include" />
-          <e p="ScoreScript.cs" t="Include" />
           <e p="StartScreenScript.cs" t="Include" />
         </e>
         <e p="TextMesh Pro" t="Include">

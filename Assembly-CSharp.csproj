@@ -47,17 +47,6 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\EndName1.cs" />
-     <Compile Include="Assets\Scripts\EndName2.cs" />
-     <Compile Include="Assets\Scripts\EndScore1.cs" />
-     <Compile Include="Assets\Scripts\EndScore2.cs" />
-     <Compile Include="Assets\Scripts\HeartRate1.cs" />
-     <Compile Include="Assets\Scripts\HeartRate2.cs" />
-     <Compile Include="Assets\Scripts\HeartRateScript.cs" />
-     <Compile Include="Assets\Scripts\Player1.cs" />
-     <Compile Include="Assets\Scripts\Player2.cs" />
-     <Compile Include="Assets\Scripts\ScoreScript1.cs" />
-     <Compile Include="Assets\Scripts\ScoreScript2.cs" />
     <Reference Include="UnityEngine">
       <HintPath>/Applications/Unity/Hub/Editor/2019.4.11f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
@@ -67,11 +56,14 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\BluetoothScript.cs" />
+     <Compile Include="Assets\Scripts\EndSceneScript.cs" />
+     <Compile Include="Assets\Scripts\GameState.cs" />
      <Compile Include="Assets\Scripts\HeartRateScript.cs" />
+     <Compile Include="Assets\Scripts\LevelSceneScript.cs" />
      <Compile Include="Assets\Scripts\NameInputScript.cs" />
-     <Compile Include="Assets\Scripts\Player.cs" />
+     <Compile Include="Assets\Scripts\Player1.cs" />
+     <Compile Include="Assets\Scripts\Player2.cs" />
      <Compile Include="Assets\Scripts\PutOnPulseBandScript.cs" />
-     <Compile Include="Assets\Scripts\ScoreScript.cs" />
      <Compile Include="Assets\Scripts\StartScreenScript.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />

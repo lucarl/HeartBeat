@@ -13,9 +13,6 @@ namespace PolarConnection
         public static bool player1Connected = false;
         public static bool player2Connected = false;
 
-        public static byte player1HR = 0;
-        public static byte player2HR = 0;
-
         public static void disconnectFromPolar()
         {
             UnityCoreBluetooth.ReleaseSharedInstance();
@@ -84,11 +81,11 @@ namespace PolarConnection
                 Debug.Log("Heart rate: " + data[1] + " from peripheral:" + peripheral.name);
                 if (peripheral.name == player1PolarBand)
                 {
-                    player1HR = data[1];
+                    GameState.P1HeartRate = data[1];
                 }
                 else if (peripheral.name == player2PolarBand)
                 {
-                    player2HR = data[1];
+                    GameState.P2HeartRate = data[1];
                 }
 
 
