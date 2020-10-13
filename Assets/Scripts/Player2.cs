@@ -15,6 +15,8 @@ public class Player2 : MonoBehaviour {
 
     private float xPos = 0;
 
+    public static string playerName = "Player 2";
+
     // Start is called before the first frame update
     void Start () {
 
@@ -22,10 +24,10 @@ public class Player2 : MonoBehaviour {
 
     // Update is called once per frame
     void Update () {
-        heartRate = (int) GetComponent<Rigidbody2D>().position.y;
+        heartRate = (int) GetComponent<Rigidbody2D> ().position.y;
         xPos += playerSpeed * Time.deltaTime;
-        transform.position = new Vector3(0, 0, 0);
-        transform.position = new Vector3(xPos, HeartRateScript.bpm2, transform.position.z);
+        transform.position = new Vector3 (0, 0, 0);
+        transform.position = new Vector3 (xPos, HeartRateScript.bpm2, transform.position.z);
     }
 
     private void OnTriggerEnter2D (Collider2D other) {

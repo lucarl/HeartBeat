@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player1 : MonoBehaviour {
 
@@ -12,6 +13,8 @@ public class Player1 : MonoBehaviour {
 
     //heart rate
     public static double heartRate = 0;
+
+    public static string playerName = "Player 1";
 
     private float xPos = 0;
 
@@ -26,6 +29,9 @@ public class Player1 : MonoBehaviour {
         xPos += playerSpeed * Time.deltaTime;
         transform.position = new Vector3(0, 0, 0);
         transform.position = new Vector3(xPos, HeartRateScript.bpm1, transform.position.z);
+        if (xPos > 263) {
+            SceneManager.LoadScene("EndScene");
+        }
     }
 
     private void OnTriggerEnter2D (Collider2D other) {
