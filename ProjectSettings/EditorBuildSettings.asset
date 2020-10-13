@@ -4,5 +4,17 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/StartScene.unity
+    guid: 4130409145de84f6080ed86a22225f13
+  - enabled: 1
+    path: Assets/Scenes/LevelScene.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/PlayerNameScene.unity
+    guid: 335772a87f4af4615ac4cfc5eedab0ea
+  - enabled: 1
+    path: Assets/Scenes/PutOnPulseBandScene.unity
+    guid: ac3f809d2dfe044f59d50536012c1bdd
   m_configObjects: {}
