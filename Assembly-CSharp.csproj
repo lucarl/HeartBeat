@@ -47,6 +47,17 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\EndName1.cs" />
+     <Compile Include="Assets\Scripts\EndName2.cs" />
+     <Compile Include="Assets\Scripts\EndScore1.cs" />
+     <Compile Include="Assets\Scripts\EndScore2.cs" />
+     <Compile Include="Assets\Scripts\HeartRate1.cs" />
+     <Compile Include="Assets\Scripts\HeartRate2.cs" />
+     <Compile Include="Assets\Scripts\HeartRateScript.cs" />
+     <Compile Include="Assets\Scripts\Player1.cs" />
+     <Compile Include="Assets\Scripts\Player2.cs" />
+     <Compile Include="Assets\Scripts\ScoreScript1.cs" />
+     <Compile Include="Assets\Scripts\ScoreScript2.cs" />
     <Reference Include="UnityEngine">
       <HintPath>/Applications/Unity/Hub/Editor/2019.4.11f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>

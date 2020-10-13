@@ -1,19 +1,20 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class Player : MonoBehaviour {
+public class Player1 : MonoBehaviour {
 
     //The speed of the player
-    private int dirSpeed = 12;
-
-    private float playerSpeed = 1f;
+    private float playerSpeed = 1.5f;
 
     //player points
     public static int points = 0;
 
     //heart rate
     public static double heartRate = 0;
+
+    public static string playerName = "Player 1";
 
     private float xPos = 0;
 
@@ -27,14 +28,10 @@ public class Player : MonoBehaviour {
         heartRate = (int) GetComponent<Rigidbody2D>().position.y;
         xPos += playerSpeed * Time.deltaTime;
         transform.position = new Vector3(0, 0, 0);
-        transform.position = new Vector3(xPos, HeartRateScript.bpm, transform.position.z);
-        /*if (Input.GetKey (KeyCode.UpArrow)) {
-            GetComponent<Rigidbody2D> ().velocity = new Vector2 (0, dirSpeed);
-        } else if (Input.GetKey (KeyCode.DownArrow)) {
-            GetComponent<Rigidbody2D> ().velocity = new Vector2 (0, dirSpeed * -1);
-        } else {
-            GetComponent<Rigidbody2D> ().velocity = new Vector2 (0, 0);
-        }*/
+        transform.position = new Vector3(xPos, HeartRateScript.bpm1, transform.position.z);
+        if (xPos > 263) {
+            SceneManager.LoadScene("EndScene");
+        }
     }
 
     private void OnTriggerEnter2D (Collider2D other) {

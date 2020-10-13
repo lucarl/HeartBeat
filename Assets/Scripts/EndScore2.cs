@@ -3,20 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ScoreScript : MonoBehaviour
-{
+public class EndScore2 : MonoBehaviour {
 
-    Text score;
+    Text scoreText;
 
     // Start is called before the first frame update
-    void Start()
-    {
-        score = GetComponent<Text> ();
+    void Start () {
+        scoreText = GetComponent<Text> ();
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        score.text = "Player 1: " + Player.points;
+    void Update () {
+        scoreText.text = "x " + Player2.points;
     }
 }
