@@ -36,6 +36,10 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\EndName1.cs" />
+     <Compile Include="Assets\Scripts\EndName2.cs" />
+     <Compile Include="Assets\Scripts\EndScore1.cs" />
+     <Compile Include="Assets\Scripts\EndScore2.cs" />
      <Compile Include="Assets\Scripts\HeartRate1.cs" />
      <Compile Include="Assets\Scripts\HeartRate2.cs" />
      <Compile Include="Assets\Scripts\HeartRateScript.cs" />
