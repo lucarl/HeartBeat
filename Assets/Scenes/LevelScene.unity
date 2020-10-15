@@ -424,12 +424,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d974b8db9e0d4bdcb133a14a7fd8fdd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  p1Sprite: {fileID: 1927348408}
-  p2Sprite: {fileID: 1820945769}
-  p1HeartRateText: {fileID: 1071994786}
-  p2HeartRateText: {fileID: 1737281532}
-  p1ScoreText: {fileID: 897361705}
-  p2ScoreText: {fileID: 1703249843}
+  p1Sprite: {fileID: 1927348413}
+  p2Sprite: {fileID: 1820945773}
+  p1HeartRateText: {fileID: 1071994789}
+  p2HeartRateText: {fileID: 1737281534}
+  p1ScoreText: {fileID: 897361707}
+  p2ScoreText: {fileID: 1703249846}
 --- !u!4 &159425185
 Transform:
   m_ObjectHideFlags: 0

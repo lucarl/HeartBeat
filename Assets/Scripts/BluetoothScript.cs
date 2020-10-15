@@ -18,7 +18,7 @@ namespace PolarConnection
             UnityCoreBluetooth.ReleaseSharedInstance();
         }
 
-        public static void connectToPolar()
+        public static void ConnectToPolar()
         {
             UnityCoreBluetooth.CreateSharedInstance();
 
@@ -34,11 +34,6 @@ namespace PolarConnection
                 Debug.Log("Discovered peripheral: " + peripheral.name);
                 if (peripheral.name == player1PolarBand || peripheral.name == player2PolarBand)
                 {
-                    if (peripheral.name == player1PolarBand && player2Connected ||
-                        peripheral.name == player2PolarBand && player1Connected)
-                    {
-                        UnityCoreBluetooth.Shared.StopScan();
-                    }
                     UnityCoreBluetooth.Shared.Connect(peripheral);
                 }
             });
@@ -47,15 +42,21 @@ namespace PolarConnection
             {
                 if (peripheral.name == player1PolarBand)
                 {
-                    player1Connected = true;
+                    GameState.P1Connected = true;
                 }
                 else if (peripheral.name == player2PolarBand)
                 {
-                    player2Connected = true;
+                    GameState.P2Connected = true;
                 }
 
-                Debug.Log("Connected to: " + peripheral.name);
-                peripheral.discoverServices();
+                if (peripheral.name == player1PolarBand && GameState.P2Connected ||
+                    peripheral.name == player2PolarBand && GameState.P1Connected)
+                {
+                    UnityCoreBluetooth.Shared.StopScan();
+                }
+
+                Debug.Log ("Connected to: " + peripheral.name);
+                peripheral.discoverServices ();
             });
 
             UnityCoreBluetooth.Shared.OnDiscoverService((UnityCBService service) =>

@@ -24,8 +24,8 @@ namespace PlayerNames
                 return;
             }
 
-            GameState.P1Name = p1Name;
-            GameState.P2Name = p2Name;
+            GameState.P1Name = p1Name.Trim();
+            GameState.P2Name = p2Name.Trim();
 
             Debug.Log("P1 name: " + p1Name + " P2 name: " + p2Name);
 

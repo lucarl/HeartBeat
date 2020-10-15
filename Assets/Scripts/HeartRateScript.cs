@@ -6,8 +6,9 @@ using UnityEngine.UI;
 
 public class HeartRateScript : MonoBehaviour {
 
-    //public static int bpm1;
-    //public static int bpm2;
+    private static string player1PolarBand = "Polar OH1 72838626";
+    private static string player2PolarBand = "Polar OH1 72852D2D";
+
 
     // Start is called before the first frame update
     void Start () {
@@ -21,14 +22,29 @@ public class HeartRateScript : MonoBehaviour {
         });
 
         UnityCoreBluetooth.Shared.OnDiscoverPeripheral ((UnityCBPeripheral peripheral) => {
-            Debug.Log ("Discovered peripheral: " + peripheral.name);
-            if (peripheral.name == "Polar OH1 72838626" || peripheral.name == "Polar OH1 72852D2D") {
-                UnityCoreBluetooth.Shared.StopScan ();
-                UnityCoreBluetooth.Shared.Connect (peripheral);
+            Debug.Log("Discovered peripheral: " + peripheral.name);
+            if (peripheral.name == player1PolarBand || peripheral.name == player2PolarBand)
+            {
+                UnityCoreBluetooth.Shared.Connect(peripheral);
             }
         });
 
         UnityCoreBluetooth.Shared.OnConnectPeripheral ((UnityCBPeripheral peripheral) => {
+            if (peripheral.name == player1PolarBand)
+            {
+                GameState.P1Connected = true;
+            }
+            else if (peripheral.name == player2PolarBand)
+            {
+                GameState.P2Connected = true;
+            }
+
+            if (peripheral.name == player1PolarBand && GameState.P2Connected ||
+                peripheral.name == player2PolarBand && GameState.P1Connected)
+            {
+                UnityCoreBluetooth.Shared.StopScan();
+            }
+
             Debug.Log ("Connected to: " + peripheral.name);
             peripheral.discoverServices ();
         });
@@ -66,8 +82,5 @@ public class HeartRateScript : MonoBehaviour {
         });
         UnityCoreBluetooth.Shared.StartCoreBluetooth ();
     }
-
-    //private byte heartRate1 = 40;
-    //private byte heartRate2 = 40;
 
 }

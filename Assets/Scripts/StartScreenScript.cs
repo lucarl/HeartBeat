@@ -35,7 +35,7 @@ public class StartScreenScript : MonoBehaviour
         }
 
         startedGame = true;
-        //BluetoothScript.connectToPolar();
+        BluetoothScript.ConnectToPolar();
         SceneManager.LoadScene(sceneName: "PlayerNameScene");
         Debug.Log("Start Game!");
     }
