@@ -42,7 +42,6 @@
      <Compile Include="Assets\Scripts\HeartRateScript.cs" />
      <Compile Include="Assets\Scripts\LevelSceneScript.cs" />
      <Compile Include="Assets\Scripts\NameInputScript.cs" />
-     <Compile Include="Assets\Scripts\NewSprite.cs" />
      <Compile Include="Assets\Scripts\Player1.cs" />
      <Compile Include="Assets\Scripts\Player2.cs" />
      <Compile Include="Assets\Scripts\PutOnPulseBandScript.cs" />
