@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class LevelSceneScript : MonoBehaviour
 {
     //The speed of the player
-    private float playerSpeed = 1.5f;
+    private float playerSpeed = 1.2f;
 
     private static float _xPos = 0;
 
@@ -53,7 +53,7 @@ public class LevelSceneScript : MonoBehaviour
         _p1ScoreText.text = GameState.P1Name + ": " + GameState.P1Score;
         _p2ScoreText.text = GameState.P2Name + ": " + GameState.P2Score;
 
-        if (_xPos > 263) {
+        if (_xPos > 225) {
             SceneManager.LoadScene("EndScene");
         }
     }
