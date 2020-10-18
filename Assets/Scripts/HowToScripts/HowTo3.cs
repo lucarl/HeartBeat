@@ -12,7 +12,7 @@ public class HowTo3 : MonoBehaviour
 
     public void SkipInstructions()
     {
-        SceneManager.LoadScene(sceneName: "LevelScene");
+        SceneManager.LoadScene(sceneName: "HowTo4");
     }
 
     // Update is called once per frame

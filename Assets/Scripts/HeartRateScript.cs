@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class HeartRateScript : MonoBehaviour {
 
-    private static string player1PolarBand = "Polar OH1 72838626";
+    /*private static string player1PolarBand = "Polar OH1 72838626";
     private static string player2PolarBand = "Polar OH1 72852D2D";
 
 
@@ -81,6 +81,6 @@ public class HeartRateScript : MonoBehaviour {
 
         });
         UnityCoreBluetooth.Shared.StartCoreBluetooth ();
-    }
+    } */
 
 }

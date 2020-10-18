@@ -13,7 +13,7 @@ public class HowTo4 : MonoBehaviour
     public Text countDown;
     private Text _countDown;
 
-    public void SkipInstructions()
+    public void GoToLevelScene()
     {
         SceneManager.LoadScene(sceneName: "LevelScene");
     }
@@ -42,12 +42,7 @@ public class HowTo4 : MonoBehaviour
 
         if (seconds > 5)
         {
-            SkipInstructions();
-        }
-
-        if (Input.GetKey(KeyCode.Space) || Input.GetKey(KeyCode.Return) || Input.GetKey(KeyCode.KeypadEnter))
-        {
-            SkipInstructions();
+            GoToLevelScene();
         }
     }
 }

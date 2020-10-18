@@ -26,10 +26,15 @@ public class LevelSceneScript : MonoBehaviour
     public Text p2ScoreText;
     private Text _p2ScoreText;
 
+    public Text p1Name;
+    public Text p2Name;
 
     // Start is called before the first frame update
     void Start()
     {
+        Debug.Log("START LEVEL SCENE RUNNING!");
+        _xPos = 0;
+
         _p1Sprite = p1Sprite.GetComponent<Rigidbody2D>();
         _p2Sprite = p2Sprite.GetComponent<Rigidbody2D>();
 
@@ -38,6 +43,9 @@ public class LevelSceneScript : MonoBehaviour
 
         _p1ScoreText = p1ScoreText.GetComponent<Text>();
         _p2ScoreText = p2ScoreText.GetComponent<Text>();
+
+        p1Name.GetComponent<Text>().text = GameState.P1Name;
+        p2Name.GetComponent<Text>().text = GameState.P2Name;
     }
 
     // Update is called once per frame
@@ -47,14 +55,15 @@ public class LevelSceneScript : MonoBehaviour
         _p1Sprite.transform.position = new Vector2(_xPos, GameState.P1HeartRate);
         _p2Sprite.transform.position = new Vector2(_xPos, GameState.P2HeartRate);
 
-        _p1HeartRateText.text = "HR: " + GameState.P1HeartRate;
-        _p2HeartRateText.text = "HR: " + GameState.P2HeartRate;
+        _p1HeartRateText.text = GameState.P1HeartRate.ToString();
+        _p2HeartRateText.text = GameState.P2HeartRate.ToString();
 
-        _p1ScoreText.text = GameState.P1Name + ": " + GameState.P1Score;
-        _p2ScoreText.text = GameState.P2Name + ": " + GameState.P2Score;
+        _p1ScoreText.text = GameState.P1Score.ToString();
+        _p2ScoreText.text = GameState.P2Score.ToString();
 
-        if (_xPos > 225) {
-            SceneManager.LoadScene("EndScene");
+        if (_xPos > 225)
+        {
+            SceneManager.LoadScene("WinnerScene");
         }
     }
 }
