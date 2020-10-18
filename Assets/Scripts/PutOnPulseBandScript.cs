@@ -35,10 +35,6 @@ public class PutOnPulseBandScript : MonoBehaviour
         {
             SceneManager.LoadScene(sceneName: "HowTo1");
         }
-        else
-        { //TODO: Ta bort detta, testar bara med ett band just nu
-            SceneManager.LoadScene(sceneName: "HowTo1");
-        }
     }
 
     // Start is called before the first frame update
