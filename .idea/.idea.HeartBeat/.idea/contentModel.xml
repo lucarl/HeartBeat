@@ -21,6 +21,12 @@
           <e p="EndSceneScript.cs" t="Include" />
           <e p="GameState.cs" t="Include" />
           <e p="HeartRateScript.cs" t="Include" />
+          <e p="HowToScripts" t="Include">
+            <e p="HowTo1.cs" t="Include" />
+            <e p="HowTo2.cs" t="Include" />
+            <e p="HowTo3.cs" t="Include" />
+            <e p="HowTo4.cs" t="Include" />
+          </e>
           <e p="LevelSceneScript.cs" t="Include" />
           <e p="NameInputScript.cs" t="Include" />
           <e p="Player1.cs" t="Include" />

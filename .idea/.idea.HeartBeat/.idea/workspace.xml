@@ -20,59 +20,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4e152df4-f787-430c-b2c6-611aa77ec5fd" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.HeartBeat/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HeartBeat/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.HeartBeat/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HeartBeat/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/LevelScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/LevelScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/PutOnPulseBandScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/PutOnPulseBandScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BluetoothScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BluetoothScript.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HeartRateScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HeartRateScript.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LevelSceneScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LevelSceneScript.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NameInputScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/NameInputScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/StartScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/StartScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/PutOnPulseBandScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PutOnPulseBandScript.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StartScreenScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StartScreenScript.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ArtifactDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ArtifactDB" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/00/006202f4d6393a3e18860f52d9e1dd6c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/0c/0cac0b9d19e5a13e8cc1a4ed8eede61d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/15/15de0435d7ab17a8b99348677898c4ff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/2c/2c871d18036accd3b9e5635fdb928792" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/32/328c40c38dd7c6f80fcc495e8cf58979" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/33/33f798581296ec30b8d7c3319d3814cd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/36/36ce662a1b1ad553eeb3700cc9df556d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/3d/3dc59b8286b125a801905113835af061" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/41/4128739cb1eea642a47007fd3990e804" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/4a/4a518f788fdf25f4b7f3fff1db4ac8d3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/4d/4dff4fdba9fbc22b94449d975e4e262c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/54/54052f509919194289c37da2c307c0a3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/5f/5f15cec0e2ded7a4e1fd5f27bb4f6517" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/5f/5f3ee37fa61fadb19596d4975c19d648" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/66/6623f53811baf8f8fd26882e82ad8827" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/72/7238f0de192863b8d8a7ce7ba44c09f4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/74/74dde2ffa931b84a4ba999407d80e9b6" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/8e/8e6b75cee5dfc7228f24ce299be6d310" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/95/952cb32921c80a191008e2a94e1f0e55" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/95/95fd006aad4f934bb5654920fd159237" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/a6/a68a49ed5f29f9cf6c30d2f42f88e5cf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/aa/aa626166c0cdb264df9554cc0a83ac6b" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/b0/b079de4e6601a36daaef784f71dc3661" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/bd/bd7d153e402af8aa74e1fddfce1928d8" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/da/dae2eb825d17e63398ded8e6097afc06" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/e2/e22062d1f3a84171dcd7b64ec0f78fac" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/e3/e3bf252f883cf5be9bd3c3e8caa83b6f" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/e4/e4063c726bcfee845b1da2cca0cc87b4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/ee/ee101772f4736af938233408b8157d6f" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/f2/f2a52e6db69ed55e0c0ce7db4a57a8ac" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/f7/f78df3a320bfbe8e78128213fe7dc77b" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/Library/CurrentMaximizeLayout.dwlt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/EditorInstance.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/EditorInstance.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/SourceAssetDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SourceAssetDB" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/StateCache/Hierarchy/46b7a0-mainStage.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/Hierarchy/46b7a0-mainStage.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/StateCache/SceneView/d69a67-mainStage.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/SceneView/d69a67-mainStage.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler3.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler3.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler4.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler4.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler5.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler5.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Temp/__Backupscenes/0.backup" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,16 +47,20 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/HowToScripts/HowTo3.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PutOnPulseBandScript.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/LevelSceneScript.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/BluetoothScript.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player1.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/StartScreenScript.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/UnityCoreBluetooth/Scripts/UnityCoreBluetooth.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/EndSceneScript.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/HowToScripts/HowTo2.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/HowToScripts/HowTo1.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player2.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/NameInputScript.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameState.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/LevelSceneScript.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/BluetoothScript.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/StartScreenScript.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/UnityCoreBluetooth/Scripts/UnityCoreBluetooth.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/EndSceneScript.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/HowToScripts/HowTo4.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/HeartRateScript.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -111,6 +79,10 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/HeartRateScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/StartScreenScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BluetoothScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/HowTo1.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/HowToScripts/HowTo2.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/HowToScripts/HowTo3.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/HowToScripts/HowTo4.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PutOnPulseBandScript.cs" />
       </list>
     </option>
@@ -154,7 +126,7 @@
       <option name="presentableId" value="Default" />
       <updated>1602505843505</updated>
       <workItem from="1602505856683" duration="2292000" />
-      <workItem from="1602588232169" duration="22785000" />
+      <workItem from="1602588232169" duration="24997000" />
     </task>
     <servers />
   </component>

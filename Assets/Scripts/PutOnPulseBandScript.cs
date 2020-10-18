@@ -33,7 +33,7 @@ public class PutOnPulseBandScript : MonoBehaviour
     {
         if (GameState.P1Connected && GameState.P2Connected && GameState.P1HeartRate > 20 && GameState.P1HeartRate > 20)
         {
-            SceneManager.LoadScene(sceneName: "LevelScene");
+            SceneManager.LoadScene(sceneName: "HowTo1");
         }
     }
 

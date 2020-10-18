@@ -59,6 +59,10 @@
      <Compile Include="Assets\Scripts\EndSceneScript.cs" />
      <Compile Include="Assets\Scripts\GameState.cs" />
      <Compile Include="Assets\Scripts\HeartRateScript.cs" />
+     <Compile Include="Assets\Scripts\HowToScripts\HowTo1.cs" />
+     <Compile Include="Assets\Scripts\HowToScripts\HowTo2.cs" />
+     <Compile Include="Assets\Scripts\HowToScripts\HowTo3.cs" />
+     <Compile Include="Assets\Scripts\HowToScripts\HowTo4.cs" />
      <Compile Include="Assets\Scripts\LevelSceneScript.cs" />
      <Compile Include="Assets\Scripts\NameInputScript.cs" />
      <Compile Include="Assets\Scripts\Player1.cs" />
