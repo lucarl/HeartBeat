@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using PolarConnection;
 
+#if UNITY_EDITOR_OSX || UNITY_IOS || UNITY_STANDALONE_OSX
 public class StartScreenScript : MonoBehaviour
 {
     // Start is called before the first frame update
@@ -40,3 +40,4 @@ public class StartScreenScript : MonoBehaviour
         Debug.Log("Start Game!");
     }
 }
+#endif

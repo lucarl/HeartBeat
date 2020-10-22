@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Runtime.InteropServices;
 
-#if UNITY_EDITOR_OSX || UNITY_IOS
+#if UNITY_EDITOR_OSX || UNITY_IOS || UNITY_STANDALONE_OSX
 namespace UnityCoreBluetoothFramework
 {
     public class UnityCBPeripheral

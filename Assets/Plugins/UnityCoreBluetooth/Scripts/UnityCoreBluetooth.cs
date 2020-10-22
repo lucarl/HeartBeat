@@ -3,7 +3,7 @@ using System.Runtime.InteropServices;
 using AOT;
 using UnityEngine;
 
-//#if UNITY_EDITOR_OSX || UNITY_IOS
+#if UNITY_EDITOR_OSX || UNITY_IOS || UNITY_STANDALONE_OSX
 
 namespace UnityCoreBluetoothFramework
 {
@@ -256,4 +256,4 @@ namespace UnityCoreBluetoothFramework
         //--------------------------------------------------------------------------------------------------------------------
     }
 }
-//#endif
+#endif

@@ -61,7 +61,7 @@ public class LevelSceneScript : MonoBehaviour
         _p1ScoreText.text = GameState.P1Score.ToString();
         _p2ScoreText.text = GameState.P2Score.ToString();
 
-        if (_xPos > 225)
+        if (_xPos > 10 /*225*/)
         {
             SceneManager.LoadScene("WinnerScene");
         }

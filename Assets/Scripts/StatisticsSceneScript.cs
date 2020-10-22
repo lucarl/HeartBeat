@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
+#if UNITY_EDITOR_OSX || UNITY_IOS || UNITY_STANDALONE_OSX
 public class StatisticsSceneScript : MonoBehaviour
 {
 
@@ -81,3 +82,4 @@ public class StatisticsSceneScript : MonoBehaviour
         }
     }
 }
+#endif

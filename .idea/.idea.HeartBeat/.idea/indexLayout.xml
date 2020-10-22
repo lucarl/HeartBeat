@@ -27,6 +27,7 @@
       <Path>.vscode</Path>
       <Path>Library</Path>
       <Path>Logs</Path>
+      <Path>PulseRace.app</Path>
       <Path>Temp</Path>
       <Path>obj</Path>
     </explicitExcludes>
